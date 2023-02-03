@@ -1,0 +1,220 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.1 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) 
+% With extensive modifications by:
+% Israel Aguilera  (israel.aguilera.navarrete@gmail.com) Nov. 2022
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{AmateCodex} % Document font size and equations flushed left
+
+\usepackage[activeacute,spanish]{babel}
+
+\fancyhead[R]{{\textsf{DOI-http}}\\
+      {{\textsf{Agosto Diciembre, 2022. M\'{E}XICO}}}}
+\fancyfoot[L]{{{Tlamatque \textbf{ISSN-xxx-xxx}}}}
+\fancyfoot[C]{{{\textsf{P \'{a} g i n a \textbar  \textbf{\thepage} }}}}
+\fancyfoot[R]{\includegraphics[width=2.0cm]{imagenes/LOGO-Tlamatque2.pdf}}
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Tlamatque, Vol. XXI, No. 1, 1-5, 2013} % Journal information
+\Archive{DOI- htt} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Article Title} % Article title
+
+\Authors{John Smith\textsuperscript{1}*, James Smith\textsuperscript{2}} % Authors
+\affiliation{\textsuperscript{1}\textit{Department of Biology, University of Examples, London, United Kingdom}} % Author affiliation
+\affiliation{\textsuperscript{2}\textit{Department of Chemistry, University of Examples, London, United Kingdom}} % Author affiliation
+\affiliation{*\textbf{Corresponding author}: john@smith.com} % Corresponding author
+
+\date{Recibido: \today / Aceptado: 18 marzo 2023}
+
+\Keywords{Keyword1 --- Keyword2 --- Keyword3} % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+\Abstract{El resumen es la síntesis de lo que aparecerá en el artículo. 
+Tiene que ser lo suficientemente consiso para que alguien sepa qué esperar del artículo si lo leyera completo. 
+Puede concluir con palabras clave. 
+El resumen queda fuera de la numeración del resto de secciones.
+Es una descripción abreviada de la investigación, sin la interpretación del autor, contiene toda la información que incluye el informe final, haciendo hincapié en sus puntos sobresalientes.}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+\maketitle % Print the title and abstract box
+\tableofcontents % Print the contents section
+\thispagestyle{empty} % Removes page numbering from the first page
+
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % The \section*{} command stops section numbering
+
+En la introducción se deben especificar aspectos, cuyo significado depende del tipo concreto de artículo:
+
+\begin{enumerate}[noitemsep]
+\item Planteamiento del problema
+\item Definición del problema
+\item Delimitación del problema
+\item Hipótesis
+\item Justificación
+\item Marco teórico
+\end{enumerate}
+
+Una buena introducción debe lograr que el lector tenga interés de leer el resto del artículo.
+
+\input{secciones/planteamiento.tex}
+\input{secciones/definicion.tex}
+\input{secciones/delimitacion.tex}
+\input{secciones/hipotesis.tex}
+\input{secciones/justificacion.tex}
+\input{secciones/marco.tex}
+\cite{Figueredo:2009dg}, \cite{Morgan}
+
+%------------------------------------------------
+\section{Materiales y métodos}
+\input{secciones/metodologia.tex}
+
+\begin{table}[t]
+\caption{Technical solutions of a bicycle front wheel.}  
+\begin{center}
+\label{TSwell}
+  \begin{tabular}{lp{6cm}}
+\hline\noalign{\smallskip}
+Item & Technical solution\\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+$ts_1$ & Fast assembly connection 133mm (5-1/4") \\
+$ts_2$ & Axis and hub 108mm (4-1/4")\\
+$ts_3$ & Locknut 3mm\\
+$ts_4$ & Flat washer 1.5mm\\
+$ts_5$ & Cone (M9x12.8mm) with dust cover and seal ring\\
+$ts_6$ & Seal ring\\
+$ts_7$ & Axis 108mm (4-1/4")\\
+$ts_8$ & Balls (3/16") 20 items\\
+$ts_9$ & Rim\\
+$ts_{10}$ & Beam 278mm\\
+$ts_{11}$ & Nipple\\
+$ts_{12}$ & Tag A\\
+$ts_{13}$ & Tag C\\
+$ts_{14}$ & Tire\\
+$ts_{15}$ & Tube\\
+\noalign{\smallskip}\hline
+\end{tabular}
+    \end{center}
+\end{table}
+
+\begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
+\includegraphics[width=\linewidth]{imagenes/view02.jpg}
+\caption{Wide Picture}
+\label{fig:view}
+\end{figure*}
+
+\begin{equation}
+\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
+\label{eq:refname2}
+\end{equation}
+
+\begin{figure}[ht]\centering
+\includegraphics[width=\linewidth]{imagenes/results}
+\caption{In-text Picture}
+\label{fig:results}
+\end{figure}
+
+Reference to Figure \ref{fig:results}.
+
+%------------------------------------------------
+
+\section{Resultados}
+\input{secciones/resultados.tex}
+
+\section{Discussion}
+\input{secciones/analisis.tex}
+
+\section{Conclusiones}
+\input{secciones/conclusiones.tex}
+
+\section*{Nomenclatura}
+\noindent 
+\begin{center}
+\begin{tabular}{lp{6cm}}
+$\Re$ & Campo de los números reales\\
+$\mathbb{Z}$ & Campo de los números enteros\\
+$D$ & Matriz de distancias \\
+$d_{ii}$ & Distancia entre dos soluciones técnicas\\
+$F$ & Conjunto de funciones\\
+$f_i$ & Función\\
+$CN$ & Conjunto de necesidades del cliente\\
+$P$ & Plataforma\\
+$p_i$ & Productos\\
+$\Gamma$ & Componentes teóricos\\
+$C$ & Conjunto de componentes\\
+$c_{i}^{k}$ & Componentes\\
+$ST$ & Conjunto de soluciones técnicas\\
+SKU & \textit{Stock-keeping unit}\\
+QFD & \textit{Quality function deployment}\\
+$CN_{rod}$ & Necesidades de los rodados\\
+$ST_{rod}$ & Soluciones técnicas de los rodados\\
+$PP_{rod}$ & Propiedades de los rodados\\
+$T_{CNPP}$ & Transformación de necesidades a propiedades\\
+$T_{rdist}$ & Transformación de las distancias de los rodados
+\end{tabular}
+\end{center}
+
+%------------------------------------------------
+\phantomsection
+\section*{Agradecimientos} % The \section*{} command stops section numbering
+\addcontentsline{toc}{section}{Agradecimientos} % Adds this section to the table of contents
+
+Es la parte donde se hace constar el nombre de todas las personas que han contribuido al desarrollo de la investigación  y a las instituciones que lo han apoyado. Es posible incluir en este apartado a familiares y amigos.
+
+\begin{enumerate}[noitemsep]
+ \item Deben ser sobrias y mesuradas.
+ \item No elaborar dedicatorias de índole religiosa.
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+\phantomsection
+\bibliographystyle{unsrt}
+\bibliography{sample,Bibliografia_BibTex.bib}
+
+\begin{center}
+\begin{tabular}{m{4cm} m{4cm}}
+\includegraphics{foto_autor/homero_simpson.jpg} & \textbf{Homero Jay Simpson} Homero se cría en la granja de sus padres, Abraham y Mona Simpson. A mediados de los años 60, mientras Homero tiene entre nueve y doce años de edad. Homero asistió a la Escuela Secundaria de Springfield y en 1974, su último año, se enamora (por segunda vez) de Marge Bouvier. \\
+\includegraphics{foto_autor/borola-burron2.png} & \textbf{Borola Tacuche} Nació en el seno de una muy rica y reconocida familia de la Ciudad de México. Alega haber sido una gran vedette de los teatros, razonamiento que le permite no limitarse y explorar oficios tan diversos como piloto de carreras, luchadora enmascarada, médico cirujano o ingeniera empírica.
+\end{tabular}
+\end{center}
+%----------------------------------------------------------------------------------------
+
+\end{document}

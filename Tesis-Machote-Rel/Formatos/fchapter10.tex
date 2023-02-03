@@ -1,0 +1,23 @@
+\usepackage{pstcol}
+\makeatletter
+\def\LigneVerticale{\vrule height 5cm depth 2cm\hspace{0.1cm}\relax}
+\def\LignesVerticales{%
+  \let\LV\LigneVerticale\LV\LV\LV\LV\LV\LV\LV\LV\LV\LV}
+\def\GrosCarreAvecUnChiffre#1{%
+  \rlap{\vrule height 0.8cm width 1cm depth 0.2cm}%
+  \rlap{\hbox to 1cm{\hss\mbox{\white #1}\hss}}%
+  \vrule height 0pt width 1cm depth 0pt}
+
+\def\@makechapterhead#1{\hbox{%
+    \huge 
+    \LignesVerticales
+    \hspace{-0.5cm}%
+    \GrosCarreAvecUnChiffre{\thechapter}
+    \hspace{0.2cm}\hbox{#1}%
+}\par\vskip 2cm}
+\def\@makeschapterhead#1{\hbox{%
+    \huge 
+    \LignesVerticales
+    %\hspace{0.5cm}%
+    \hbox{#1}%
+}\par\vskip 2cm}

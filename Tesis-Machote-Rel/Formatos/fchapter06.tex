@@ -1,0 +1,33 @@
+\makeatletter
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\def\@makechapterhead#1{%
+  {\parindent \z@ \raggedright
+    \reset@font
+    \hrule
+    \vspace*{10\p@}%
+    \par
+    \Large \scshape \@chapapp{} \Huge\bfseries \thechapter
+    \par\nobreak
+    \vspace*{10\p@}%
+    \hrule
+    \par
+    \vspace*{1\p@}%
+    \hrule
+    %\vskip 40\p@
+    \vspace*{20\p@}
+    \Huge \bfseries #1\par\nobreak
+    \vskip 70\p@
+  }}
+
+\def\section#1{%
+  \par\bigskip\bigskip
+  \hrule\par\nobreak\noindent
+  \refstepcounter{section}%
+  \addcontentsline{toc}{chapter}{#1}%
+  \reset@font 
+  { \Large \bfseries
+    \strut\S \thesection \quad
+    #1}%    
+  \par
+  \medskip
+}

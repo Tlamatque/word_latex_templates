@@ -1,0 +1,29 @@
+\usepackage{fancyhdr}					%Inicia resaltar la pagina del capitulo
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\lhead[\fancyplain{}{\bfseries\thepage}]
+{\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]
+{\fancyplain{}{\bfseries\thepage}}
+\cfoot{}
+\makeatletter
+\newfont{\scaledfont}{cmr12 scaled 5000}
+\newcommand\capitulo{Capítulo}
+\renewcommand\thechapter{\arabic{chapter}}
+\def\@makechapterhead#1{%
+   {
+     \par\noindent%
+    \begin{tabular}{c}%
+      \scaledfont \thechapter \\
+      \large \bf\capitulo
+    \end{tabular}
+    \hskip 20pt%
+    \interlinepenalty\@M
+    \mbox{\parbox[c]{0.8\linewidth}{\LARGE\bf\textsf{#1}}}
+    \par\noindent
+    \rule{\textwidth}{1pt}%  <--- the rule
+    \vskip -0.5\baselineskip
+    \vskip 40\p@
+  }%
+}								%Termina resaltar la pagina del capitulo

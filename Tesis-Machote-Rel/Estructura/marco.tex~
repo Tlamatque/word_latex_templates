@@ -1,0 +1,18 @@
+\paragraph{DEFINICIÓN}
+Es la inserción del problema en un determinado cuerpo de conocimientos científicos, manejando críticamente lo que ya se conoce sobre el tema en lo referente a teorías y a resultados de investigaciones realizadas en el propio campo de interés. Se establece a través de una revisión bibliográfica exhaustiva, pero limitada a los temas que tienen relación con el problema planteado.
+
+
+\paragraph{SUGERENCIAS}
+
+\begin{enumerate}
+ \item Revisar objetivos, metodología y conclusiones de investigaciones recientes y de parecida índole. Hacerlo cronológicamente (ascendente o descendente).
+ \item Describir la relación del problema con investigaciones anteriormente realizadas.
+ \item Revisar teorías que expliquen el enfoque de la investigación (educativas, filosóficas, psicológicas, económicas, sociológicas, etc.).
+\end{enumerate}
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=4cm]{Figuras/Logo_ITC.pdf}
+ \caption{Logo ITC}
+ \label{Fig_ITC}
+\end{figure}

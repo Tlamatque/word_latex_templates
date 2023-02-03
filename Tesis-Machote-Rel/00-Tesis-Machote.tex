@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%INICIA Formato de impresión
+\documentclass[letterpaper,10pt,graphicx,caption,rotating,oneside]{book}
+
+\setlength{\oddsidemargin}{4.6mm}
+\setlength{\evensidemargin}{4.6mm}
+\setlength{\topmargin}{-13mm}
+\setlength{\textheight}{229.4mm}
+\setlength{\textwidth}{156mm}
+
+\usepackage[pdftex]{hyperref}								%crea hiperbinculos
+\hypersetup{colorlinks, citecolor=blue, filecolor=blue, linkcolor=blue, urlcolor=blue} 	%Colorea los hiperbinculos del color que uno guste.
+\usepackage{amssymb}
+\usepackage{amsmath}  									%American Mathematical Society, proporciona comandos para la escritura de fórmulas matemáticas de mayor complejidad.
+\usepackage[activeacute,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{caption}
+\usepackage[pdftex]{graphicx}
+\usepackage{times}                            						% Fuente de letras
+\usepackage{makeidx}                          						% Contiene los macros para indexar en un glosario
+\makeindex				      						% esto habilita los comandos de makeindex
+
+%%%%%%%%%%%%%%%%%%   Formato   %%%%%%%%%%%%%%%%%%%%%
+\input{Estructura/portada-ITC2.tex} 		%Crea portada del ITC
+\input{Formatos/fchapter05}			%Resaltar la pagina del capitulo Formato 05 el mejor
+%%%%%%%%%%%%%%%%%%   Formato   %%%%%%%%%%%%%%%%%%%%%
+
+\author{Nombre del alumno}
+\newcommand{\instructor}{M.C.I.M. Israel Aguilera Navarrete}
+\title{Nombre del Trabajo Final}
+\date{2009-02-06}
+%%%%%%%%%%%%%%%%%%%%%%%%Teermina Formato de impresi\'{o}n
+
+\begin{document}
+\pagenumbering{roman}                           	%comienza la numeraci\'{o}n romana
+
+\maketitle
+
+\input{Estructura/legal.tex}
+
+\setcounter{page}{2}
+
+\chapter*{Portada} 			\addcontentsline{toc}{chapter}{Portada}
+\input{Estructura/portada.tex}
+
+\chapter*{Agradecimientos}		\addcontentsline{toc}{chapter}{Agradecimientos}
+\input{Estructura/agradecimientos.tex}
+
+\chapter*{Resumen} 			\addcontentsline{toc}{chapter}{Resumen}
+\input{Estructura/resumen.tex}
+
+\chapter*{Pr\'{o}logo} 			\addcontentsline{toc}{chapter}{Pr\'{o}logo}
+\input{Estructura/prologo.tex}		%Esto tengo que pedirle a alguien que me lo escriba.
+
+\chapter*{Simbolog\'{\i}a utilizada}	\addcontentsline{toc}{chapter}{Simbolog\'{\i}a utilizada}
+\input{Estructura/nomenclatura.tex}
+
+\tableofcontents			%Se crea la tabla de contenido
+\listoffigures				%Se agrega la lista de figuras
+\listoftables
+
+\pagenumbering{arabic}					%comienza la numeraci\'{o}n ar\'{a}biga
+\renewcommand{\indexname}{\'{I}ndice alfabético}	%adaptación al español
+\renewcommand{\listtablename}{\'{I}ndice de tablas}	%no funciona revisar...
+\renewcommand{\tablename}{Tabla}
+
+\chapter{Marco de referencia}
+\input{Estructura/introduccion.tex}
+\input{Estructura/planteamiento.tex}
+\input{Estructura/definicion.tex}
+\input{Estructura/delimitacion.tex}
+\input{Estructura/objetivos.tex}
+\input{Estructura/justificacion.tex}
+\input{Estructura/hipotesis.tex}
+
+\chapter{Marco te\'{o}rico} 
+\input{Estructura/marco.tex}
+\cite{Morgan}
+
+\chapter{Desarrollo del proyecto}
+\input{Estructura/metodologia.tex}
+\input{Estructura/resultados.tex}
+
+\chapter{An\'{a}lisis de Resultados}
+\input{Estructura/analisis.tex}
+\input{Estructura/conclusiones.tex}
+\input{Estructura/recomendaciones.tex}
+
+\bibliographystyle{plain}
+\bibliography{Estructura/Bibliografia01.bib}
+
+\input{Estructura/bibliografia.tex}
+
+\newpage
+
+\chapter*{Glosario de t\'{e}rminos especiales} 		\addcontentsline{toc}{chapter}{Glosario de t\'{e}rminos especiales}
+
+\chapter*{Anexo A} 					\addcontentsline{toc}{chapter}{Anexo A}
+\input{Estructura/anexoA.tex}
+
+\printindex                 				%aquí se genera el índice alfabético
+
+\end{document}

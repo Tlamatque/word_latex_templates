@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Materiales y m\IeC {\'e}todos}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Animales}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Frutas Silvestres}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Cazador:}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Reactivos}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Bosques:}{2}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Determinaci\IeC {\'o}n de la inducci\IeC {\'o}n lobo-caperucita}{2}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Determinaci\IeC {\'o}n de fagocitosis de abuelita}{2}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Determinaci\IeC {\'o}n del cambio de fenotipo de lobo feroz}{2}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Determinaci\IeC {\'o}n de Lisis de LF-PP}{2}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Final feliz}{3}{subsection.2.10}
+\contentsline {subsection}{\numberline {2.11}An\IeC {\'a}lisis estad\IeC {\'\i }stico}{3}{subsection.2.11}
+\contentsline {section}{\numberline {3}Discusi\IeC {\'o}n}{3}{section.3}
+\contentsline {section}{Agradecimientos}{4}{section*.4}
+\contentsline {section}{Referencias}{4}{section*.5}
+\contentsfinish 

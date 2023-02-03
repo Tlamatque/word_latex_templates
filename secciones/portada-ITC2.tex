@@ -1,0 +1,102 @@
+\makeatletter
+
+\renewcommand{\maketitle}{\begin{titlepage}%
+
+    \hspace{120pt}
+    \setlength{\unitlength}{1pt}
+    \begin{picture}(150,1)
+    \linethickness{3pt}
+    \put(-102,0){\line(102,0){394}}
+    \linethickness{1.3pt}
+    \put(-95,-9){\line(95,0){381}}
+    \end{picture}
+    \vspace*{0.1cm}
+
+    \setlength{\unitlength}{1pt}
+    \begin{picture}(3,12)
+    \linethickness{3pt}
+    \put(-20,-120){\line(0,-1){510}}
+    \linethickness{1.3pt}
+    \put(-14,-120){\line(0,-1){500}}
+    \end{picture}
+    \vspace*{0.1cm}			
+
+
+%    \hbox{
+\mbox{%
+        \hspace{-50pt}%
+
+        \includegraphics[width=50em]{Figuras/ITC-nombre.pdf}%
+ %       }%
+
+       \mbox{\hspace{-43em}}
+       \vtop{% %%%%%%%%%%%%%%%%%%
+        
+	%\vskip 1\p@
+        %\begin{flushleft}
+        %  \centerline{ \bfseries \huge{I}\large{NSTITUTO} \huge{T}\large{ECNOLÓGICO} \large{DE} \huge{C}\large{ELAYA}} \par
+        %\end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+        \centerline{ \large \bfseries DEPARTAMENTO DE INGENIERÍA MECÁNICA} \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+        \centerline{ \large LICENCIATURA EN INGENIERÍA MECÁNICA} \par
+        \end{flushleft}
+
+        \vskip 1\p@
+        \begin{flushleft}
+        \centerline{ \huge \bfseries \@title } \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+         \centerline{ \large \bfseries TRABAJO FINAL DE SEMESTRE} \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+          \centerline{\large \bfseries QUE PARA OBTENER EL PASE DE LA MATERIA DE} \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+          \centerline{ \large \bfseries FUNDAMENTOS DE INVESTIGACIÓN} \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+          \centerline{ \large PRESENTA} \par
+        \end{flushleft}
+
+        %\vskip 1\p@
+        \begin{flushleft}
+          \centerline{\Large \@author} \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+          \centerline{\large DIRECTOR} \par
+        \end{flushleft}
+
+	%\vskip 1\p@
+        \begin{flushleft}
+          \centerline{\large \instructor} \par
+        \end{flushleft}
+
+	\vskip 1\p@
+        \begin{flushleft}
+         \centerline{ \large Celaya, Guanajuato, México {\today}} \par
+        \end{flushleft}
+
+        \vfil
+        }}
+    \null
+  \end{titlepage}%
+  \setcounter{footnote}{0}%
+}
+
+\makeatother
